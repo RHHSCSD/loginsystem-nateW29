@@ -199,14 +199,14 @@ public class JFrame extends javax.swing.JFrame {
             String line = reader.readLine();
             while (line != null){
                 if (password.equals(line.trim())){
-                    return true;
+                    return false;
                 }
                 line = reader.readLine();
             }
         } catch (IOException e){
             e.printStackTrace();
         }
-        return false;
+        return true;
     }
     
     private void registerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerButtonActionPerformed
