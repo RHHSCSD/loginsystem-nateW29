@@ -176,20 +176,17 @@ public class JFrame extends javax.swing.JFrame {
     private boolean isValidPassword(String password) {
         // Check if password has at least 8 characters
         if (password.length() < 8) {
-            System.out.println("HOLY");
             return false;
         }
         
         // Check if password contains at least one uppercase letter
         if (!password.matches(".*[A-Z].*")) {
-            System.out.println("COW");
             
             return false;
         }
         
         // Check if password contains at least one digit
         if (!password.matches(".*\\d.*")) {
-            System.out.println("man");
             return false;
         }
         
